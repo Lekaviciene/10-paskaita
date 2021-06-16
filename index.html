@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10-paskaita</title>
     <style>
+        html{
+            font-size: 18px;
+        }                                  
         .container {
             width: 100%;
             height: 1000px;
@@ -14,24 +17,117 @@
             background-color: #657ad3;
             opacity: 0.7;
         }
-        .paveiksliukas{
+        .paveiksliukas {
             height: 100%;
-            background-image: url("https://images.unsplash.com/photo-1543872084-c7bd3822856f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+            background-image: url("http://mintys.lt/wp-content/uploads/2012/03/Mieli-paveiksliukai-10.jpg");
+            background-color: grey;
             background-repeat: no-repeat;
-            background-position: center center;
+            opacity: 0.7;
+            background-attachment: fixed;
+            /*background-position: center center;*/
             /*background-size: 100% 100%;*/
-            background-size: contain;
+            /*background-size: contain;*/
+            /*background-size: cover;*/    
         }
         
+        table {
+            font-family: Arial, Helvetica, sans-serif
+             border 1px solid rgb(65, 136, 56);
+             margin-bottom: 1200px;
+             width: 100%;
+             border-collapse: collapse;
+
+        }
+
+        td, th{
+            border: 1px solid black;
+        }
+        th {
+            text-align: left;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            background-color: #04aa6d
+            text-color white
+            font-size 1rem;
+             }
+
+        td {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 0.7778rem;
+        }
+
+        tr :nth-child(even) {
+            background-color: fhfhfh;
+        }
+
+        tr:hover {
+            background-color: rgb(65, 136, 56);
+        }
+
+        /*td:hover {
+            background-color: rgb(65, 136, 56);
+        }*/
+.col-20 {
+    width: 20%;
+    }
+
+.col-40 {
+    width: 40%;
+    .img {
+        width: 100%;
+    }
+}
+        
+
     </style>
 </head>
 <body>
-    <div class ="paveiksliukas">
+            
+        <table>
+            <tr>
+                <th class="col-20">stulpelis 1</th>
+                <th class="col-40">stulpelis 2</th>
+                <th class="col-40">stulpelis 3</th>
+                
+            </tr>
+            <tr>
+                <td>img src=""</td>
+                <td>stulpelis 2</td>
+                <td>stulpelis 3</td>
+            </tr>
+            <tr>
+                <td>stulpelis 1</td>
+                <td>stulpelis 2</td>
+                <td>stulpelis 3</td>
+            </tr>
+            <tr>
+                <td>stulpelis 1</td>
+                <td>stulpelis 2</td>
+                <td>stulpelis 3</td>
+            </tr>
+            <tr>
+                <td>stulpelis 1</td>
+                <td>stulpelis 2</td>
+                <td>stulpelis 3</td>
+            </tr>
+            <tr>
+                <td>stulpelis 1</td>
+                <td>stulpelis 2</td>
+                <td>stulpelis 3</td>
+            </tr>
+            <tr>
+                <td>stulpelis 1</td>
+                <td>stulpelis 2</td>
+                <td>stulpelis 3</td>
+            </tr>
+        </table>
 
-    </div>
-    <div class ="container fonas">
-        Tekstas
+        <div class ="paveiksliukas">
+
         </div>
-    
+        <div class ="container fonas">
+            Tekstas
+            </div>
 </body>
 </html>
